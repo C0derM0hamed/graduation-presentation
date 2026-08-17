@@ -23,14 +23,15 @@ The presentation is built on a 1920×1080 fixed-aspect-ratio canvas that automat
 
 ## Deployment to GitHub Pages
 
-This presentation is pre-configured to be deployed as a static site, perfectly suited for GitHub Pages.
+The production build is published to the repository's `gh-pages` branch. In GitHub, open **Settings → Pages**, choose **Deploy from a branch**, select `gh-pages` and the `/ (root)` folder, then save.
 
-1. **Vite Configuration:** The `vite.config.ts` is configured with `base: './'` to ensure all assets resolve relative to the `index.html` file, regardless of the sub-directory it is hosted in.
-2. **Build:**
-   ```bash
-   npm run build
-   ```
-3. **Deploy:** Simply upload the contents of the `dist/` directory to your `gh-pages` branch, or configure your GitHub repository settings to publish from GitHub Actions pointing to the `dist/` directory.
+To build the site locally:
+
+```bash
+npm run build
+```
+
+The Vite `base: './'` setting keeps assets working from the repository Pages URL.
 
 ## Architecture & Structure
 

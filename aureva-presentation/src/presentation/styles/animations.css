@@ -1,0 +1,88 @@
+/* ============================================================
+   AUREVA Presentation — Global Animations
+   Reusable keyframes and animation utilities
+   ============================================================ */
+
+/* ---- Keyframes ---- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideReveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes accentPulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.65; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* ---- Utility Animation Classes ---- */
+
+.anim-fade-in {
+  animation: fadeIn var(--duration-base) var(--ease-out-expo) both;
+}
+
+.anim-fade-up {
+  animation: fadeUp var(--duration-base) var(--ease-out-expo) both;
+}
+
+.anim-fade-down {
+  animation: fadeDown var(--duration-base) var(--ease-out-expo) both;
+}
+
+.anim-scale-in {
+  animation: scaleIn var(--duration-base) var(--ease-out-expo) both;
+}
+
+/* Stagger delays — for sibling reveals */
+.anim-delay-1 { animation-delay: 80ms; }
+.anim-delay-2 { animation-delay: 160ms; }
+.anim-delay-3 { animation-delay: 240ms; }
+.anim-delay-4 { animation-delay: 320ms; }
+.anim-delay-5 { animation-delay: 400ms; }
+.anim-delay-6 { animation-delay: 480ms; }
+
+/* SVG path drawing */
+.svg-draw-path {
+  stroke-dasharray: 1000;
+  animation: drawLine var(--duration-slow) var(--ease-out-expo) both;
+}

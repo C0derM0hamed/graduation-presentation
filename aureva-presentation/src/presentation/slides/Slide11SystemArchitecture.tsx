@@ -22,7 +22,7 @@ const TechBadge: React.FC<{ label: string; delay: number }> = ({ label, delay })
       border: '1px solid rgba(139,26,74,0.18)',
       borderRadius: 999,
       fontFamily: "'Inter', sans-serif",
-      fontSize: 22,
+      fontSize: 17,
       fontWeight: 600,
       color: '#8B1A4A',
       letterSpacing: '0.04em',
@@ -69,7 +69,7 @@ const Node: React.FC<{
     {sub && (
       <p style={{
         fontFamily: "'Inter', sans-serif",
-        fontSize: 22,
+        fontSize: 17,
         fontWeight: 400,
         color: accent || dark ? 'rgba(255,255,255,0.65)' : '#7A706C',
         margin: 0,
@@ -109,7 +109,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 21,
+            fontSize: 16,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -125,7 +125,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 67,
+            fontSize: 50,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
@@ -147,7 +147,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
 
       {/* ── Architecture Diagram ── */}
       <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0, transform: 'scale(0.85)', transformOrigin: 'center center' }}>
 
           {/* Doctor */}
           <Node label="Doctor" sub="Clinical User" delay={0.2} />

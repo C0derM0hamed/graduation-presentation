@@ -14,7 +14,8 @@
  * but allow per-slide overrides from the slide registry.
  */
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import { Maximize } from 'lucide-react';
 import { AnimatePresence as _AnimatePresence, motion } from 'framer-motion';
 
 // framer-motion v4 AnimatePresenceProps doesn't declare children in React 18 strict mode
@@ -49,6 +50,28 @@ function resolveVariant(variant: TransitionVariant | undefined) {
 const PresentationShell: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const scale = useCanvasScale(containerRef as React.RefObject<HTMLElement>);
+
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        console.warn(`Error attempting to enable full-screen mode: ${err.message}`);
+      });
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  };
 
   const {
     currentSlide,
@@ -127,6 +150,42 @@ const PresentationShell: React.FC = () => {
         currentSlide={currentSlide}
         totalSlides={totalSlides}
       />
+
+      {/* Fullscreen Toggle Button */}
+      {!isFullscreen && (
+        <button
+          onClick={toggleFullscreen}
+          style={{
+            position: 'absolute',
+            top: '24px',
+            right: '24px',
+            zIndex: 1000,
+            background: 'rgba(26, 22, 20, 0.6)',
+            backdropFilter: 'blur(8px)',
+            color: '#FAFAF8',
+            border: '1px solid rgba(255,255,255,0.2)',
+            borderRadius: '12px',
+            padding: '12px',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            transition: 'all 0.2s ease-out'
+          }}
+          aria-label="Enter Fullscreen"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = 'rgba(26, 22, 20, 0.9)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'rgba(26, 22, 20, 0.6)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <Maximize size={24} />
+        </button>
+      )}
     </div>
   );
 };

@@ -19,15 +19,15 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        style={{ marginBottom: 44 }}
+        style={{ marginBottom: 53 }}
       >
-        <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <motion.div variants={staggerItem} style={{ marginBottom: 20 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 11,
+                fontSize: 18,
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -43,13 +43,13 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           variants={staggerItem}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 44,
+            fontSize: 70,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.15,
             color: '#1A1614',
             margin: 0,
-            marginBottom: 10,
+            marginBottom: 12,
           }}
         >
           Who Uses AUREVA. Who Pays for It.
@@ -74,8 +74,8 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
         style={{
           display: 'grid',
           gridTemplateColumns: '1fr 1.3fr 1fr',
-          gap: 20,
-          marginBottom: 36,
+          gap: 24,
+          marginBottom: 44,
           alignItems: 'stretch',
         }}
       >
@@ -86,7 +86,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             background: '#FFFFFF',
             border: '1px solid #E5E2DC',
             borderRadius: 16,
-            padding: '32px 28px',
+            padding: '38px 34px',
             boxShadow: '0 2px 8px rgba(26,22,20,0.06)',
             display: 'flex',
             flexDirection: 'column',
@@ -96,17 +96,17 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              padding: '5px 12px',
+              padding: '6px 14px',
               background: '#F5F4F0',
               borderRadius: 999,
-              marginBottom: 20,
+              marginBottom: 24,
               alignSelf: 'flex-start',
             }}
           >
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 10,
+                fontSize: 16,
                 fontWeight: 700,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -127,7 +127,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              marginBottom: 16,
+              marginBottom: 20,
             }}
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A4340" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -139,11 +139,11 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 24,
+              fontSize: 38,
               fontWeight: 700,
               color: '#1A1614',
               margin: 0,
-              marginBottom: 8,
+              marginBottom: 10,
               letterSpacing: '-0.01em',
             }}
           >
@@ -152,7 +152,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 400,
               color: '#7A706C',
               margin: 0,
@@ -172,7 +172,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             background: '#1A1614',
             border: '1px solid #1A1614',
             borderRadius: 20,
-            padding: '36px 32px',
+            padding: '44px 38px',
             boxShadow: '0 8px 32px rgba(26,22,20,0.18)',
             display: 'flex',
             flexDirection: 'column',
@@ -197,10 +197,10 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              padding: '5px 12px',
+              padding: '6px 14px',
               background: '#8B1A4A',
               borderRadius: 999,
-              marginBottom: 20,
+              marginBottom: 24,
               alignSelf: 'flex-start',
               zIndex: 1,
             }}
@@ -208,7 +208,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 10,
+                fontSize: 16,
                 fontWeight: 700,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -229,7 +229,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              marginBottom: 16,
+              marginBottom: 20,
               zIndex: 1,
             }}
           >
@@ -242,11 +242,11 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 26,
+              fontSize: 42,
               fontWeight: 700,
               color: '#FAFAF8',
               margin: 0,
-              marginBottom: 8,
+              marginBottom: 10,
               letterSpacing: '-0.01em',
               zIndex: 1,
             }}
@@ -256,7 +256,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 400,
               color: 'rgba(250,250,248,0.6)',
               margin: 0,
@@ -272,7 +272,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           {/* Accent line at bottom */}
           <div
             style={{
-              marginTop: 24,
+              marginTop: 29,
               height: 2,
               background: 'linear-gradient(to right, #8B1A4A, transparent)',
               borderRadius: 999,
@@ -288,7 +288,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             background: '#FFFFFF',
             border: '1px dashed rgba(139,26,74,0.25)',
             borderRadius: 16,
-            padding: '32px 28px',
+            padding: '38px 34px',
             display: 'flex',
             flexDirection: 'column',
           }}
@@ -297,18 +297,18 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: 6,
-              padding: '5px 12px',
+              gap: 8,
+              padding: '6px 14px',
               background: '#F2E6EC',
               borderRadius: 999,
-              marginBottom: 20,
+              marginBottom: 24,
               alignSelf: 'flex-start',
             }}
           >
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 10,
+                fontSize: 16,
                 fontWeight: 700,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -329,7 +329,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              marginBottom: 16,
+              marginBottom: 20,
             }}
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8B1A4A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -341,11 +341,11 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 24,
+              fontSize: 38,
               fontWeight: 700,
               color: '#1A1614',
               margin: 0,
-              marginBottom: 8,
+              marginBottom: 10,
               letterSpacing: '-0.01em',
             }}
           >
@@ -354,7 +354,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 400,
               color: '#7A706C',
               margin: 0,
@@ -377,8 +377,8 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: 12,
-          padding: '14px 22px',
+          gap: 14,
+          padding: '17px 26px',
           background: '#F5F4F0',
           borderRadius: 999,
           border: '1px solid #E5E2DC',
@@ -389,7 +389,7 @@ const Slide07UsersCustomers: React.FC<SlideProps> = () => {
         <p
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 14,
+            fontSize: 22,
             fontWeight: 500,
             color: '#1A1614',
             margin: 0,

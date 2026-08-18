@@ -47,17 +47,17 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
-      <div style={{ marginBottom: 48, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ marginBottom: 77, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease, delay: 0.05 }}
-          style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 12 }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 16, marginBottom: 19 }}
         >
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -74,13 +74,13 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 48,
+            fontSize: 77,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
             color: '#1A1614',
             margin: 0,
-            marginBottom: 16,
+            marginBottom: 26,
           }}
         >
           Built to Scale. Designed to Evolve.
@@ -92,7 +92,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
         flex: 1,
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: 32,
+        gap: 51,
         alignItems: 'stretch',
         minHeight: 0,
       }}>
@@ -103,7 +103,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease, delay: pillar.delay }}
             style={{
-              padding: '32px 28px',
+              padding: '51px 45px',
               background: '#FFFFFF',
               border: '1px solid #E5E2DC',
               borderRadius: 16,
@@ -126,7 +126,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
             }} />
 
             {/* Icon + Title */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 26, marginBottom: 51 }}>
               <div style={{
                 width: 44,
                 height: 44,
@@ -139,7 +139,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
               }}>
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 20,
+                  fontSize: 32,
                   color: '#8B1A4A',
                 }}>
                   {pillar.icon}
@@ -147,7 +147,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
               </div>
               <h2 style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: 22,
+                fontSize: 35,
                 fontWeight: 700,
                 color: '#1A1614',
                 margin: 0,
@@ -158,37 +158,37 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
             </div>
 
             {/* Items */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 38 }}>
               {pillar.items.map((item, i) => (
                 <motion.div
                   key={item.label}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, ease, delay: pillar.delay + 0.2 + i * 0.1 }}
-                  style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}
+                  style={{ display: 'flex', alignItems: 'flex-start', gap: 19 }}
                 >
                   <div style={{
                     width: 6,
                     height: 6,
                     borderRadius: '50%',
                     background: '#8B1A4A',
-                    marginTop: 8,
+                    marginTop: 13,
                     flexShrink: 0,
                   }} />
                   <div>
                     <p style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 16,
+                      fontSize: 26,
                       fontWeight: 600,
                       color: '#1A1614',
                       margin: 0,
-                      marginBottom: 4,
+                      marginBottom: 6,
                     }}>
                       {item.label}
                     </p>
                     <p style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 14,
+                      fontSize: 22,
                       color: '#7A706C',
                       margin: 0,
                       lineHeight: 1.5,

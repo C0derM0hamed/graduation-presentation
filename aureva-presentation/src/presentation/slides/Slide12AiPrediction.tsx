@@ -31,7 +31,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
-      <div style={{ marginBottom: 32 }}>
+      <div style={{ marginBottom: 33 }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -56,7 +56,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 44,
+            fontSize: 70,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
@@ -87,7 +87,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
 
         {/* COL 1 — Clinical Data + Features */}
         <div style={{
-          paddingRight: 32,
+          paddingRight: 33,
           borderRight: '1px solid #E5E2DC',
           height: '100%',
           display: 'flex',
@@ -100,12 +100,12 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
             transition={{ duration: 0.4, ease, delay: 0.25 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 16,
+              marginBottom: 17,
             }}
           >
             Clinical Input Features
@@ -140,7 +140,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
                 <div>
                   <span style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 14,
+                    fontSize: 22,
                     fontWeight: 500,
                     color: '#1A1614',
                   }}>
@@ -148,7 +148,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
                   </span>
                   <span style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 12,
+                    fontSize: 19,
                     fontWeight: 400,
                     color: '#7A706C',
                     marginLeft: 8,
@@ -167,7 +167,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 24px',
+          padding: '0 25px',
           gap: 12,
         }}>
           {/* Arrow in */}
@@ -189,7 +189,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease, delay: 0.88 }}
             style={{
-              padding: '12px 16px',
+              padding: '12px 17px',
               background: '#F5F4F0',
               border: '1px solid #E5E2DC',
               borderRadius: 10,
@@ -197,10 +197,10 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
               width: '100%',
             }}
           >
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 600, color: '#4A4340', margin: 0 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 21, fontWeight: 600, color: '#4A4340', margin: 0 }}>
               Feature Engineering
             </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, color: '#7A706C', margin: 0, marginTop: 2 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, color: '#7A706C', margin: 0, marginTop: 2 }}>
               Normalization · Encoding
             </p>
           </motion.div>
@@ -224,7 +224,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.55, ease, delay: 1.06 }}
             style={{
-              padding: '18px 20px',
+              padding: '19px 21px',
               background: '#8B1A4A',
               borderRadius: 14,
               textAlign: 'center',
@@ -234,7 +234,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
           >
             <p style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 18,
+              fontSize: 29,
               fontWeight: 700,
               color: '#FFFFFF',
               margin: 0,
@@ -244,7 +244,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 11,
+              fontSize: 18,
               fontWeight: 400,
               color: 'rgba(255,255,255,0.6)',
               margin: 0,
@@ -269,13 +269,13 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
 
         {/* COL 3 — Output */}
         <div style={{
-          paddingLeft: 32,
+          paddingLeft: 33,
           borderLeft: '1px solid #E5E2DC',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          gap: 20,
+          gap: 21,
         }}>
           {/* Probability */}
           <motion.div
@@ -283,7 +283,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease, delay: 1.26 }}
             style={{
-              padding: '20px 24px',
+              padding: '21px 25px',
               background: '#FFFFFF',
               border: '1px solid #E5E2DC',
               borderRadius: 14,
@@ -293,7 +293,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
           >
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 600,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
@@ -305,22 +305,22 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
             </p>
             <p style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 56,
+              fontSize: 90,
               fontWeight: 700,
               color: '#1A1614',
               margin: 0,
               lineHeight: 1,
               letterSpacing: '-0.02em',
             }}>
-              72<span style={{ fontSize: 28, color: '#8B1A4A' }}>%</span>
+              72<span style={{ fontSize: 45, color: '#8B1A4A' }}>%</span>
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 400,
               color: '#7A706C',
               margin: 0,
-              marginTop: 6,
+              marginTop: 7,
             }}>
               IVF Cycle Success Likelihood
             </p>
@@ -334,7 +334,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
           >
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 600,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
@@ -370,7 +370,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
                   }} />
                   <span style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 14,
+                    fontSize: 22,
                     fontWeight: i === 0 ? 600 : 500,
                     color: i === 0 ? tier.color : '#7A706C',
                   }}>
@@ -380,7 +380,7 @@ const Slide12AiPrediction: React.FC<SlideProps> = () => {
                     <span style={{
                       marginLeft: 'auto',
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 12,
+                      fontSize: 19,
                       fontWeight: 600,
                       color: tier.color,
                     }}>

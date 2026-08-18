@@ -63,7 +63,7 @@ const DocIcon: React.FC<{ label: string; delay: number }> = ({ label, delay }) =
     </div>
     <span style={{
       fontFamily: "'Inter', sans-serif",
-      fontSize: 15,
+      fontSize: 20,
       fontWeight: 700,
       color: '#8B1A4A',
       letterSpacing: '0.08em',
@@ -87,7 +87,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
-      <div style={{ marginBottom: 28 }}>
+      <div style={{ marginBottom: 29 }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 17,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -112,7 +112,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 42,
+            fontSize: 55,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
@@ -136,7 +136,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
         flex: 1,
         display: 'grid',
         gridTemplateColumns: '1fr 2.2fr',
-        gap: 48,
+        gap: 50,
         alignItems: 'center',
         minHeight: 0,
       }}>
@@ -149,18 +149,18 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
             transition={{ delay: 0.28 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 16,
+              fontSize: 21,
               fontWeight: 600,
               letterSpacing: '0.16em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 24,
+              marginBottom: 25,
             }}
           >
             Source Guidelines
           </motion.p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 21 }}>
             {['ESHRE', 'NICE', 'ASRM'].map((src, i) => (
               <DocIcon key={src} label={src} delay={0.3 + i * 0.1} />
             ))}
@@ -172,16 +172,16 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.65 }}
             style={{
-              marginTop: 32,
+              marginTop: 33,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: 6,
+              gap: 7,
             }}
           >
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 15,
+              fontSize: 20,
               fontWeight: 400,
               color: '#7A706C',
               margin: 0,
@@ -204,8 +204,8 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 20,
-                  padding: '16px 24px',
+                  gap: 21,
+                  padding: '17px 25px',
                   background: step.dark
                     ? '#1A1614'
                     : step.accent
@@ -245,7 +245,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
                 }}>
                   <span style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 16,
+                    fontSize: 21,
                     fontWeight: 700,
                     color: step.dark || step.accent ? '#FFFFFF' : '#8B1A4A',
                   }}>
@@ -256,7 +256,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
                 <div>
                   <p style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 19,
+                    fontSize: 25,
                     fontWeight: 600,
                     color: step.dark || step.accent
                       ? '#FFFFFF'
@@ -270,7 +270,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
                   </p>
                   <p style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 15,
+                    fontSize: 20,
                     fontWeight: 400,
                     color: step.dark || step.accent
                       ? 'rgba(255,255,255,0.65)'
@@ -289,7 +289,7 @@ const Slide14ClinicalRag: React.FC<SlideProps> = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.42 + i * 0.1 }}
                   style={{
-                    marginLeft: 28,
+                    marginLeft: 29,
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',

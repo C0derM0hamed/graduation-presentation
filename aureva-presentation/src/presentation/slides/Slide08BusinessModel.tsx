@@ -52,15 +52,15 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        style={{ marginBottom: 40 }}
+        style={{ marginBottom: 42 }}
       >
-        <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
+        <motion.div variants={staggerItem} style={{ marginBottom: 17 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 11,
+                fontSize: 18,
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -76,7 +76,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
           variants={staggerItem}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 44,
+            fontSize: 70,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.15,
@@ -104,7 +104,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
         style={{
           display: 'grid',
           gridTemplateColumns: '1.4fr 1fr',
-          gap: 48,
+          gap: 50,
           alignItems: 'start',
         }}
       >
@@ -113,12 +113,12 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 32,
+              marginBottom: 33,
             }}
           >
             Go-To-Market Journey
@@ -131,7 +131,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.55, ease, delay: 0.2 + i * 0.1 }}
-                style={{ display: 'flex', gap: 24, position: 'relative' }}
+                style={{ display: 'flex', gap: 25, position: 'relative' }}
               >
                 {/* Connector */}
                 <div
@@ -158,7 +158,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                     <span
                       style={{
                         fontFamily: "'Inter', sans-serif",
-                        fontSize: 14,
+                        fontSize: 22,
                         fontWeight: 700,
                         color: step.active ? '#FFFFFF' : '#7A706C',
                         letterSpacing: '0.05em',
@@ -185,11 +185,11 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 19,
+                      fontSize: 30,
                       fontWeight: 600,
                       color: step.active ? '#1A1614' : '#4A4340',
                       margin: 0,
-                      marginBottom: 6,
+                      marginBottom: 7,
                     }}
                   >
                     {step.label}
@@ -197,7 +197,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 16,
+                      fontSize: 26,
                       fontWeight: 400,
                       color: '#7A706C',
                       margin: 0,
@@ -217,18 +217,18 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 32,
+              marginBottom: 33,
             }}
           >
             Revenue Paths
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 17 }}>
             {revenue.map((item, i) => (
               <motion.div
                 key={item.model}
@@ -236,7 +236,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease, delay: 0.4 + i * 0.1 }}
                 style={{
-                  padding: '24px 28px',
+                  padding: '25px 29px',
                   background: '#FFFFFF',
                   borderRadius: 14,
                   border: '1px solid #E5E2DC',
@@ -247,11 +247,11 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                 <p
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 18,
+                    fontSize: 29,
                     fontWeight: 600,
                     color: '#1A1614',
                     margin: 0,
-                    marginBottom: 6,
+                    marginBottom: 7,
                   }}
                 >
                   {item.model}
@@ -259,7 +259,7 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
                 <p
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 16,
+                    fontSize: 26,
                     fontWeight: 400,
                     color: '#7A706C',
                     margin: 0,
@@ -278,12 +278,12 @@ const Slide08BusinessModel: React.FC<SlideProps> = () => {
             initial="hidden"
             animate="visible"
             transition={{ delay: 0.75 } as any}
-            style={{ marginTop: 28 }}
+            style={{ marginTop: 29 }}
           >
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 15,
+                fontSize: 24,
                 fontWeight: 400,
                 color: '#7A706C',
                 lineHeight: 1.6,

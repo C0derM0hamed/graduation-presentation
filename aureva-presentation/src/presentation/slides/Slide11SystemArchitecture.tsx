@@ -17,12 +17,12 @@ const TechBadge: React.FC<{ label: string; delay: number }> = ({ label, delay })
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4, ease, delay }}
     style={{
-      padding: '6px 14px',
+      padding: '7px 14px',
       background: '#F2E6EC',
       border: '1px solid rgba(139,26,74,0.18)',
       borderRadius: 999,
       fontFamily: "'Inter', sans-serif",
-      fontSize: 14,
+      fontSize: 22,
       fontWeight: 600,
       color: '#8B1A4A',
       letterSpacing: '0.04em',
@@ -69,7 +69,7 @@ const Node: React.FC<{
     {sub && (
       <p style={{
         fontFamily: "'Inter', sans-serif",
-        fontSize: 14,
+        fontSize: 22,
         fontWeight: 400,
         color: accent || dark ? 'rgba(255,255,255,0.65)' : '#7A706C',
         margin: 0,
@@ -99,7 +99,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
-      <div style={{ marginBottom: 32 }}>
+      <div style={{ marginBottom: 33 }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -109,7 +109,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -125,7 +125,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 42,
+            fontSize: 67,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
@@ -156,7 +156,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           {/* Frontend */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
             <Node label="Frontend" sub="Web Application" delay={0.38} />
-            <div style={{ display: 'flex', gap: 6 }}>
+            <div style={{ display: 'flex', gap: 7 }}>
               <TechBadge label="React" delay={0.44} />
               <TechBadge label="TanStack" delay={0.48} />
             </div>
@@ -170,7 +170,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           {/* Backend */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
             <Node label="Backend" sub="Business logic · Services" delay={0.72} accent />
-            <div style={{ display: 'flex', gap: 6 }}>
+            <div style={{ display: 'flex', gap: 7 }}>
               <TechBadge label="FastAPI" delay={0.78} />
               <TechBadge label="PostgreSQL" delay={0.82} />
             </div>
@@ -178,7 +178,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
           <VArrow delay={0.86} height={24} />
 
           {/* ML + RAG branches */}
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 48 }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 50 }}>
             {/* ML branch */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
               <motion.div
@@ -188,14 +188,14 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
               >
                 <Node label="ML Engine" sub="Prediction · SHAP" delay={0} minWidth={200} />
               </motion.div>
-              <div style={{ display: 'flex', gap: 6 }}>
+              <div style={{ display: 'flex', gap: 7 }}>
                 <TechBadge label="XGBoost" delay={1.0} />
                 <TechBadge label="SHAP" delay={1.04} />
               </div>
             </div>
 
             {/* Vertical line joining both */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 18 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 19 }}>
               <div style={{ width: 96, height: 1.5, background: 'rgba(139,26,74,0.25)', marginBottom: -1 }} />
             </div>
 
@@ -208,7 +208,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
               >
                 <Node label="RAG Pipeline" sub="Retrieval · Generation" delay={0} minWidth={200} />
               </motion.div>
-              <div style={{ display: 'flex', gap: 6 }}>
+              <div style={{ display: 'flex', gap: 7 }}>
                 <TechBadge label="Qdrant" delay={1.0} />
                 <TechBadge label="LLM" delay={1.04} />
               </div>

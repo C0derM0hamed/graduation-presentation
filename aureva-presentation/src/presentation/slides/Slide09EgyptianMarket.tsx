@@ -50,15 +50,15 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        style={{ marginBottom: 44 }}
+        style={{ marginBottom: 46 }}
       >
-        <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
+        <motion.div variants={staggerItem} style={{ marginBottom: 17 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 11,
+                fontSize: 18,
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -74,7 +74,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
           variants={staggerItem}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 44,
+            fontSize: 70,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.15,
@@ -102,7 +102,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
         style={{
           display: 'grid',
           gridTemplateColumns: '1.5fr 1fr',
-          gap: 56,
+          gap: 59,
           alignItems: 'start',
         }}
       >
@@ -111,12 +111,12 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 32,
+              marginBottom: 33,
             }}
           >
             Market Entry Sequence
@@ -139,7 +139,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
                   transition={{ duration: 0.55, ease, delay: 0.15 + i * 0.1 }}
                   style={{
                     flex: 1,
-                    padding: '24px 20px',
+                    padding: '25px 21px',
                     background:
                       step.type === 'start'
                         ? '#8B1A4A'
@@ -171,7 +171,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 15,
+                      fontSize: 24,
                       fontWeight: 700,
                       color:
                         step.type === 'start' || step.type === 'end'
@@ -186,7 +186,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 14,
+                      fontSize: 22,
                       fontWeight: 400,
                       color:
                         step.type === 'start' || step.type === 'end'
@@ -242,18 +242,18 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 32,
+              marginBottom: 33,
             }}
           >
             What We Measure
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 17 }}>
             {measurements.map((m, i) => (
               <motion.div
                 key={m}
@@ -263,8 +263,8 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 16,
-                  padding: '18px 24px',
+                  gap: 17,
+                  padding: '19px 25px',
                   background: '#FFFFFF',
                   borderRadius: 12,
                   border: '1px solid #E5E2DC',
@@ -283,7 +283,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
                 <span
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 18,
+                    fontSize: 29,
                     fontWeight: 500,
                     color: '#1A1614',
                   }}
@@ -301,8 +301,8 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
             animate="visible"
             transition={{ delay: 0.75 } as any}
             style={{
-              marginTop: 28,
-              padding: '18px 22px',
+              marginTop: 29,
+              padding: '19px 23px',
               background: '#F2E6EC',
               borderRadius: 12,
               border: '1px solid rgba(139,26,74,0.15)',
@@ -311,7 +311,7 @@ const Slide09EgyptianMarket: React.FC<SlideProps> = () => {
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 400,
                 color: '#4A4340',
                 margin: 0,

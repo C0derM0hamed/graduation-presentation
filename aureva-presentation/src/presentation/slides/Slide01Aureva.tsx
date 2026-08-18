@@ -27,7 +27,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          padding: '80px 72px 80px 120px',
+          padding: '83px 75px 83px 125px',
           position: 'relative',
         }}
       >
@@ -40,13 +40,13 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
             display: 'flex',
             alignItems: 'center',
             gap: 12,
-            marginBottom: 48,
+            marginBottom: 50,
           }}
         >
           <div style={{ width: 32, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 11,
+            fontSize: 18,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -63,7 +63,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
           transition={{ duration: 0.8, ease, delay: 0.25 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 96,
+            fontSize: 154,
             fontWeight: 700,
             letterSpacing: '-0.03em',
             lineHeight: 0.95,
@@ -86,7 +86,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
             background: '#8B1A4A',
             borderRadius: 999,
             transformOrigin: 'left',
-            marginBottom: 28,
+            marginBottom: 29,
           }}
         />
 
@@ -97,13 +97,13 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.45 }}
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
             color: '#4A4340',
             margin: 0,
-            marginBottom: 36,
+            marginBottom: 38,
           }}
         >
           Clinical Decision Support<br />for IVF Specialists
@@ -116,13 +116,13 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.6 }}
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 16,
+            fontSize: 26,
             fontWeight: 400,
             lineHeight: 1.7,
             color: '#7A706C',
             margin: 0,
-            maxWidth: 440,
-            marginBottom: 56,
+            maxWidth: 704,
+            marginBottom: 59,
           }}
         >
           AUREVA helps IVF physicians turn complex, scattered patient
@@ -138,7 +138,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
             width: '100%',
             height: 1,
             background: '#E5E2DC',
-            marginBottom: 28,
+            marginBottom: 29,
           }}
         />
 
@@ -150,19 +150,19 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
         >
           <p style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 11,
+            fontSize: 18,
             fontWeight: 600,
             letterSpacing: '0.16em',
             textTransform: 'uppercase',
             color: '#8B1A4A',
             margin: 0,
-            marginBottom: 6,
+            marginBottom: 7,
           }}>
             Clinical Partnership
           </p>
           <p style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 14,
+            fontSize: 22,
             fontWeight: 500,
             color: '#1A1614',
             margin: 0,
@@ -172,7 +172,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
           </p>
           <p style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 400,
             color: '#7A706C',
             margin: 0,
@@ -196,14 +196,14 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
           }}
         >
           <div style={{
-            padding: '6px 14px',
+            padding: '7px 14px',
             background: '#F2E6EC',
             borderRadius: 999,
             border: '1px solid rgba(139,26,74,0.18)',
           }}>
             <span style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 11,
+              fontSize: 18,
               fontWeight: 600,
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
@@ -287,7 +287,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: 16,
+            gap: 17,
           }}
         >
           {/* A-mark — three clean rectangles */}
@@ -328,7 +328,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
 
           <span style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 28,
+            fontSize: 45,
             fontWeight: 700,
             letterSpacing: '0.12em',
             color: '#1A1614',
@@ -350,7 +350,7 @@ const Slide01Aureva: React.FC<SlideProps> = () => {
             transform: 'translateY(-50%) rotate(-90deg)',
             transformOrigin: 'center center',
             fontFamily: "'Inter', sans-serif",
-            fontSize: 11,
+            fontSize: 18,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',

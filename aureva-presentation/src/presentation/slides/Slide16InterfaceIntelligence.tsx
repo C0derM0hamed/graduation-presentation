@@ -16,12 +16,12 @@ const TechPill: React.FC<{ label: string; delay: number }> = ({ label, delay }) 
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.35, ease, delay }}
     style={{
-      padding: '6px 14px',
+      padding: '7px 14px',
       background: '#F2E6EC',
       border: '1px solid rgba(139,26,74,0.18)',
       borderRadius: 999,
       fontFamily: "'Inter', sans-serif",
-      fontSize: 14,
+      fontSize: 22,
       fontWeight: 600,
       color: '#8B1A4A',
       letterSpacing: '0.04em',
@@ -47,7 +47,7 @@ const LayerBox: React.FC<{
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, ease, delay }}
     style={{
-      padding: '20px 28px',
+      padding: '21px 29px',
       background: dark ? '#1A1614' : accent ? '#8B1A4A' : '#FFFFFF',
       border: dark || accent ? 'none' : '1px solid #E5E2DC',
       borderRadius: 16,
@@ -68,7 +68,7 @@ const LayerBox: React.FC<{
     {sub && (
       <p style={{
         fontFamily: "'Inter', sans-serif",
-        fontSize: 15,
+        fontSize: 24,
         color: accent || dark ? 'rgba(255,255,255,0.65)' : '#7A706C',
         margin: 0,
         marginBottom: (pills && pills.length) ? 10 : 0,
@@ -77,7 +77,7 @@ const LayerBox: React.FC<{
       </p>
     )}
     {pills && pills.length > 0 && (
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7, marginTop: 8 }}>
         {pills.map((p, i) => <TechPill key={p} label={p} delay={pillsDelay + i * 0.06} />)}
       </div>
     )}
@@ -102,7 +102,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
-      <div style={{ marginBottom: 28 }}>
+      <div style={{ marginBottom: 29 }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -112,7 +112,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -127,7 +127,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 42,
+            fontSize: 67,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
@@ -151,7 +151,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
         flex: 1,
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        gap: 48,
+        gap: 50,
         alignItems: 'start',
         minHeight: 0,
       }}>
@@ -164,12 +164,12 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             transition={{ delay: 0.28 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 16,
+              fontSize: 26,
               fontWeight: 600,
               letterSpacing: '0.16em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 20,
+              marginBottom: 21,
             }}
           >
             Client Layer
@@ -208,7 +208,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
                   transition={{ duration: 0.4, ease, delay: 0.72 + i * 0.08 }}
                   style={{
                     flex: 1,
-                    padding: '14px 16px',
+                    padding: '14px 17px',
                     background: '#F5F4F0',
                     border: '1px solid #E5E2DC',
                     borderRadius: 12,
@@ -217,7 +217,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
                 >
                   <p style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 15,
+                    fontSize: 24,
                     fontWeight: 600,
                     color: '#4A4340',
                     margin: 0,
@@ -227,7 +227,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
                   </p>
                   <p style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 13,
+                    fontSize: 21,
                     color: '#7A706C',
                     margin: 0,
                   }}>
@@ -247,12 +247,12 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             transition={{ delay: 0.28 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 16,
+              fontSize: 26,
               fontWeight: 600,
               letterSpacing: '0.16em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 20,
+              marginBottom: 21,
             }}
           >
             Server Layer
@@ -289,7 +289,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             <Arrow delay={0.86} />
 
             {/* ML + RAG branches */}
-            <div style={{ display: 'flex', gap: 16, width: '100%' }}>
+            <div style={{ display: 'flex', gap: 17, width: '100%' }}>
               {[
                 { label: 'ML Engine', techs: ['XGBoost', 'SHAP'] },
                 { label: 'RAG Engine', techs: ['Qdrant', 'LLM'] },
@@ -301,7 +301,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
                   transition={{ duration: 0.45, ease, delay: 0.92 + i * 0.1 }}
                   style={{
                     flex: 1,
-                    padding: '20px 24px',
+                    padding: '21px 25px',
                     background: '#1A1614',
                     borderRadius: 14,
                     boxShadow: '0 6px 20px rgba(26,22,20,0.14)',
@@ -309,7 +309,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
                 >
                   <p style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 18,
+                    fontSize: 29,
                     fontWeight: 600,
                     color: '#FAFAF8',
                     margin: 0,
@@ -317,7 +317,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
                   }}>
                     {branch.label}
                   </p>
-                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>
                     {branch.techs.map((t, j) => (
                       <TechPill key={t} label={t} delay={1.0 + i * 0.1 + j * 0.06} />
                     ))}

@@ -26,7 +26,7 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         overflow: 'hidden',
-        paddingBottom: 64,
+        paddingBottom: 102,
       }}
     >
       {/* ── LEFT — Section message ── */}
@@ -35,7 +35,7 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          padding: '80px 64px 80px 120px',
+          padding: '128px 102px 128px 192px',
           borderRight: '1px solid #E5E2DC',
         }}
       >
@@ -43,12 +43,12 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease, delay: 0.1 }}
-          style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}
+          style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}
         >
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -64,13 +64,13 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           transition={{ duration: 0.75, ease, delay: 0.2 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 60,
+            fontSize: 96,
             fontWeight: 700,
             letterSpacing: '-0.03em',
             lineHeight: 1.05,
             color: '#1A1614',
             margin: 0,
-            marginBottom: 12,
+            marginBottom: 19,
           }}
         >
           Now, Under<br />the Hood.
@@ -86,7 +86,7 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
             background: '#8B1A4A',
             borderRadius: 999,
             transformOrigin: 'left',
-            marginBottom: 28,
+            marginBottom: 45,
           }}
         />
 
@@ -96,12 +96,12 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.5 }}
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 20,
+            fontSize: 32,
             fontWeight: 400,
             lineHeight: 1.75,
             color: '#7A706C',
             margin: 0,
-            maxWidth: 400,
+            maxWidth: 640,
           }}
         >
           We've shown what AUREVA does.<br />
@@ -113,18 +113,18 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease, delay: 0.8 }}
-          style={{ display: 'flex', gap: 12, marginTop: 44, flexWrap: 'wrap' }}
+          style={{ display: 'flex', gap: 19, marginTop: 70, flexWrap: 'wrap' }}
         >
           {['System Architecture', 'AI Prediction', 'Explainability', 'RAG Pipeline', 'Clinical Generation'].map((tag) => (
             <span
               key={tag}
               style={{
-                padding: '8px 18px',
+                padding: '13px 29px',
                 background: '#F2E6EC',
                 border: '1px solid rgba(139,26,74,0.15)',
                 borderRadius: 999,
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 500,
                 color: '#8B1A4A',
               }}
@@ -143,7 +143,7 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           alignItems: 'center',
           justifyContent: 'center',
           gap: 0,
-          padding: '80px 80px',
+          padding: '128px 128px',
         }}
       >
         {flow.map((item, i) => (
@@ -168,14 +168,14 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
                 fontWeight: item.accent ? 700 : 600,
                 color: item.accent ? '#FFFFFF' : item.bottom ? '#FAFAF8' : '#1A1614',
                 margin: 0,
-                marginBottom: 6,
+                marginBottom: 10,
                 letterSpacing: item.accent ? '-0.01em' : '0',
               }}>
                 {item.label}
               </p>
               <p style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 400,
                 color: item.accent ? 'rgba(255,255,255,0.65)' : item.bottom ? 'rgba(250,250,248,0.5)' : '#7A706C',
                 margin: 0,

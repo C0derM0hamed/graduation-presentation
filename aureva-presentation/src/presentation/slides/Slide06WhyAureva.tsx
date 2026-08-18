@@ -51,20 +51,20 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
         }}
       >
         {/* ── LEFT — Header + bottom statement ── */}
-        <div style={{ paddingRight: 80 }}>
+        <div style={{ paddingRight: 96 }}>
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
           >
             {/* Eyebrow */}
-            <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <motion.div variants={staggerItem} style={{ marginBottom: 20 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
                 <span
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 11,
+                    fontSize: 18,
                     fontWeight: 600,
                     letterSpacing: '0.2em',
                     textTransform: 'uppercase',
@@ -80,14 +80,14 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
               variants={staggerItem}
               style={{
                 fontFamily: "'Playfair Display', Georgia, serif",
-                fontSize: 44,
+                fontSize: 70,
                 fontWeight: 700,
                 letterSpacing: '-0.02em',
                 lineHeight: 1.15,
                 color: '#1A1614',
                 margin: 0,
-                marginBottom: 10,
-                maxWidth: 460,
+                marginBottom: 12,
+                maxWidth: 736,
               }}
             >
               A Number Alone Isn't Enough
@@ -100,7 +100,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
                 width: 56,
                 background: '#8B1A4A',
                 borderRadius: 999,
-                marginBottom: 24,
+                marginBottom: 29,
               }}
             />
 
@@ -108,13 +108,13 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
               variants={staggerItem}
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 400,
                 lineHeight: 1.75,
                 color: '#7A706C',
                 margin: 0,
-                maxWidth: 440,
-                marginBottom: 40,
+                maxWidth: 704,
+                marginBottom: 48,
               }}
             >
               AUREVA is built around the full case-review workflow —
@@ -126,22 +126,22 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
             <motion.div
               variants={fadeUpVariant}
               style={{
-                padding: '20px 24px',
+                padding: '24px 29px',
                 background: '#1A1614',
                 borderRadius: 14,
-                maxWidth: 420,
+                maxWidth: 672,
               }}
             >
               <p
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: 17,
+                  fontSize: 27,
                   fontWeight: 600,
                   fontStyle: 'italic',
                   color: '#FAFAF8',
                   margin: 0,
                   lineHeight: 1.55,
-                  marginBottom: 10,
+                  marginBottom: 12,
                 }}
               >
                 Not just a percentage. A clearer view of the case.
@@ -149,7 +149,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
               <p
                 style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 12,
+                  fontSize: 19,
                   fontWeight: 400,
                   color: 'rgba(250,250,248,0.55)',
                   margin: 0,
@@ -166,7 +166,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
         {/* ── RIGHT — Flow diagram ── */}
         <div
           style={{
-            paddingLeft: 80,
+            paddingLeft: 96,
             borderLeft: '1px solid #E5E2DC',
             height: '100%',
             display: 'flex',
@@ -180,12 +180,12 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
             transition={{ duration: 0.5, ease, delay: 0.15 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 11,
+              fontSize: 18,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 28,
+              marginBottom: 34,
             }}
           >
             AUREVA Workflow
@@ -201,7 +201,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
                   style={{
                     display: 'flex',
                     alignItems: 'stretch',
-                    gap: 16,
+                    gap: 20,
                     marginBottom: i < flowSteps.length - 1 ? 0 : 0,
                   }}
                 >
@@ -225,7 +225,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
                           : step.color,
                         border: '2px solid white',
                         boxShadow: '0 0 0 1.5px rgba(139,26,74,0.3)',
-                        marginTop: 16,
+                        marginTop: 20,
                         flexShrink: 0,
                         zIndex: 1,
                       }}
@@ -248,7 +248,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
                   <div
                     style={{
                       flex: 1,
-                      padding: '14px 18px',
+                      padding: '17px 22px',
                       background: step.color,
                       borderRadius: 12,
                       border: `1px solid ${
@@ -264,11 +264,11 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
                     <p
                       style={{
                         fontFamily: "'Inter', sans-serif",
-                        fontSize: 15,
+                        fontSize: 24,
                         fontWeight: 600,
                         color: step.textColor,
                         margin: 0,
-                        marginBottom: 3,
+                        marginBottom: 4,
                       }}
                     >
                       {step.label}
@@ -276,7 +276,7 @@ const Slide06WhyAureva: React.FC<SlideProps> = () => {
                     <p
                       style={{
                         fontFamily: "'Inter', sans-serif",
-                        fontSize: 12,
+                        fontSize: 19,
                         fontWeight: 400,
                         color:
                           step.textColor === '#FFFFFF'

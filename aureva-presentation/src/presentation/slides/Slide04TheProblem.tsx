@@ -46,15 +46,15 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        style={{ marginBottom: 40 }}
+        style={{ marginBottom: 64 }}
       >
-        <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <motion.div variants={staggerItem} style={{ marginBottom: 26 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 11,
+                fontSize: 18,
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -70,14 +70,14 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
           variants={staggerItem}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 44,
+            fontSize: 70,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.15,
             color: '#1A1614',
             margin: 0,
-            marginBottom: 10,
-            maxWidth: 700,
+            marginBottom: 16,
+            maxWidth: 1120,
           }}
         >
           A Real Clinical Problem, at Real Scale in Egypt
@@ -102,8 +102,8 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: 20,
-          marginBottom: 36,
+          gap: 32,
+          marginBottom: 58,
         }}
       >
         {stats.map((stat, i) => (
@@ -115,7 +115,7 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
               background: '#FFFFFF',
               border: '1px solid #E5E2DC',
               borderRadius: 16,
-              padding: '32px 28px',
+              padding: '51px 45px',
               boxShadow: '0 2px 8px rgba(26,22,20,0.06)',
               position: 'relative',
               overflow: 'hidden',
@@ -140,13 +140,13 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
             <p
               style={{
                 fontFamily: "'Playfair Display', Georgia, serif",
-                fontSize: 40,
+                fontSize: 64,
                 fontWeight: 700,
                 letterSpacing: '-0.02em',
                 lineHeight: 1,
                 color: '#1A1614',
                 margin: 0,
-                marginBottom: 12,
+                marginBottom: 19,
               }}
             >
               {stat.value}
@@ -159,7 +159,7 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
                 height: 1.5,
                 background: '#8B1A4A',
                 borderRadius: 999,
-                marginBottom: 12,
+                marginBottom: 19,
                 opacity: 0.5,
               }}
             />
@@ -168,7 +168,7 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
+                fontSize: 21,
                 fontWeight: 500,
                 color: '#4A4340',
                 margin: 0,
@@ -181,7 +181,7 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
+                fontSize: 21,
                 fontWeight: 400,
                 color: '#7A706C',
                 margin: 0,
@@ -201,8 +201,8 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
         animate="visible"
         transition={{ delay: 0.6 } as any}
         style={{
-          maxWidth: 860,
-          padding: '20px 28px',
+          maxWidth: 1376,
+          padding: '32px 45px',
           background: '#F5F4F0',
           borderRadius: 12,
           border: '1px solid #E5E2DC',
@@ -212,7 +212,7 @@ const Slide04TheProblem: React.FC<SlideProps> = () => {
         <p
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 15,
+            fontSize: 24,
             fontWeight: 400,
             lineHeight: 1.75,
             color: '#4A4340',

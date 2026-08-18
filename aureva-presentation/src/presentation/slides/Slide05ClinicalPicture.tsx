@@ -57,19 +57,19 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
         }}
       >
         {/* ── LEFT — Header + statement ── */}
-        <div style={{ paddingRight: 80 }}>
+        <div style={{ paddingRight: 128 }}>
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
           >
-            <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <motion.div variants={staggerItem} style={{ marginBottom: 26 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                 <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
                 <span
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 11,
+                    fontSize: 18,
                     fontWeight: 600,
                     letterSpacing: '0.2em',
                     textTransform: 'uppercase',
@@ -85,14 +85,14 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
               variants={staggerItem}
               style={{
                 fontFamily: "'Playfair Display', Georgia, serif",
-                fontSize: 42,
+                fontSize: 67,
                 fontWeight: 700,
                 letterSpacing: '-0.02em',
                 lineHeight: 1.15,
                 color: '#1A1614',
                 margin: 0,
-                marginBottom: 10,
-                maxWidth: 500,
+                marginBottom: 16,
+                maxWidth: 800,
               }}
             >
               The Data Exists. Bringing It Together Takes Work.
@@ -105,7 +105,7 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
                 width: 56,
                 background: '#8B1A4A',
                 borderRadius: 999,
-                marginBottom: 24,
+                marginBottom: 38,
               }}
             />
 
@@ -113,13 +113,13 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
               variants={staggerItem}
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 400,
                 lineHeight: 1.7,
                 color: '#7A706C',
                 margin: 0,
-                maxWidth: 440,
-                marginBottom: 32,
+                maxWidth: 704,
+                marginBottom: 51,
               }}
             >
               Before treatment, an IVF specialist weighs many factors at once —
@@ -132,23 +132,23 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
               variants={fadeUpVariant}
               style={{
                 position: 'relative',
-                padding: '24px 28px',
+                padding: '38px 45px',
                 background: '#F5F4F0',
                 borderRadius: 16,
                 border: '1px solid #E5E2DC',
-                maxWidth: 420,
+                maxWidth: 672,
               }}
             >
               <p
                 style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 11,
+                  fontSize: 18,
                   fontWeight: 600,
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase',
                   color: '#8B1A4A',
                   margin: 0,
-                  marginBottom: 12,
+                  marginBottom: 19,
                 }}
               >
                 The Physician's Challenge
@@ -156,7 +156,7 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
               <p
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: 17,
+                  fontSize: 27,
                   fontWeight: 600,
                   fontStyle: 'italic',
                   color: '#1A1614',
@@ -174,7 +174,7 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
         {/* ── RIGHT — Factor cards ── */}
         <div
           style={{
-            paddingLeft: 80,
+            paddingLeft: 128,
             borderLeft: '1px solid #E5E2DC',
             height: '100%',
             display: 'flex',
@@ -188,18 +188,18 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
             transition={{ duration: 0.5, ease, delay: 0.15 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 11,
+              fontSize: 18,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 24,
+              marginBottom: 38,
             }}
           >
             Factors Considered
           </motion.p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 19 }}>
             {factors.map((factor, i) => (
               <motion.div
                 key={factor.label}
@@ -209,8 +209,8 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
                 style={{
                   display: 'flex',
                   alignItems: 'flex-start',
-                  gap: 16,
-                  padding: '16px 20px',
+                  gap: 26,
+                  padding: '26px 32px',
                   background: '#FFFFFF',
                   borderRadius: 12,
                   border: '1px solid #E5E2DC',
@@ -234,7 +234,7 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
                   <span
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 11,
+                      fontSize: 18,
                       fontWeight: 700,
                       color: i === 0 ? '#FFFFFF' : '#8B1A4A',
                     }}
@@ -247,11 +247,11 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 14,
+                      fontSize: 22,
                       fontWeight: 600,
                       color: '#1A1614',
                       margin: 0,
-                      marginBottom: 3,
+                      marginBottom: 5,
                     }}
                   >
                     {factor.label}
@@ -259,7 +259,7 @@ const Slide05ClinicalPicture: React.FC<SlideProps> = () => {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 12,
+                      fontSize: 19,
                       fontWeight: 400,
                       color: '#7A706C',
                       margin: 0,

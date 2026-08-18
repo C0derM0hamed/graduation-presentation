@@ -32,15 +32,15 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        style={{ marginBottom: 36 }}
+        style={{ marginBottom: 58 }}
       >
-        <motion.div variants={staggerItem} style={{ marginBottom: 14 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <motion.div variants={staggerItem} style={{ marginBottom: 22 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
             <span
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
+                fontSize: 21,
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -56,14 +56,14 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
           variants={staggerItem}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 42,
+            fontSize: 67,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.15,
             color: '#1A1614',
             margin: 0,
-            marginBottom: 10,
-            maxWidth: 700,
+            marginBottom: 16,
+            maxWidth: 1120,
           }}
         >
           Built with real clinical collaboration.
@@ -83,7 +83,7 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
             background: '#8B1A4A',
             borderRadius: 999,
             transformOrigin: 'left',
-            marginBottom: 16,
+            marginBottom: 26,
           }}
         />
 
@@ -91,12 +91,12 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
           variants={staggerItem}
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 18,
+            fontSize: 29,
             fontWeight: 400,
             lineHeight: 1.7,
             color: '#7A706C',
             margin: 0,
-            maxWidth: 720,
+            maxWidth: 1152,
           }}
         >
           AUREVA's clinical design was shaped through direct sessions with Dr. Mahmoud Abdelaleem —
@@ -109,7 +109,7 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: 20,
+          gap: 32,
           flex: 1,
           minHeight: 0,
         }}
@@ -172,18 +172,18 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
         animate="visible"
         transition={{ delay: 0.6 } as any}
         style={{
-          marginTop: 20,
+          marginTop: 32,
           display: 'flex',
           alignItems: 'center',
-          gap: 10,
+          gap: 16,
         }}
       >
         <div
           style={{
             display: 'inline-flex',
             alignItems: 'center',
-            gap: 8,
-            padding: '10px 18px',
+            gap: 13,
+            padding: '16px 29px',
             background: '#F2E6EC',
             borderRadius: 999,
             border: '1px solid rgba(139,26,74,0.18)',
@@ -193,7 +193,7 @@ const Slide03ClinicalPartnership: React.FC<SlideProps> = () => {
           <span
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 600,
               color: '#8B1A4A',
               letterSpacing: '0.06em',

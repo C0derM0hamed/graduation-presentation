@@ -37,7 +37,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
         style={{
           display: 'grid',
           gridTemplateColumns: '1.2fr 1fr',
-          gap: 64,
+          gap: 66,
           height: '100%',
           alignItems: 'center',
         }}
@@ -49,15 +49,15 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            style={{ marginBottom: 48 }}
+            style={{ marginBottom: 50 }}
           >
-            <motion.div variants={staggerItem} style={{ marginBottom: 16 }}>
+            <motion.div variants={staggerItem} style={{ marginBottom: 17 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
                 <span
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 13,
+                    fontSize: 17,
                     fontWeight: 600,
                     letterSpacing: '0.2em',
                     textTransform: 'uppercase',
@@ -73,14 +73,14 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
               variants={staggerItem}
               style={{
                 fontFamily: "'Playfair Display', Georgia, serif",
-                fontSize: 42,
+                fontSize: 55,
                 fontWeight: 700,
                 letterSpacing: '-0.02em',
                 lineHeight: 1.15,
                 color: '#1A1614',
                 margin: 0,
                 marginBottom: 12,
-                maxWidth: 520,
+                maxWidth: 832,
               }}
             >
               Built in Partnership With Real IVF Expertise
@@ -93,7 +93,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
                 width: 56,
                 background: '#8B1A4A',
                 borderRadius: 999,
-                marginBottom: 20,
+                marginBottom: 21,
               }}
             />
 
@@ -101,12 +101,12 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
               variants={staggerItem}
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 18,
+                fontSize: 24,
                 fontWeight: 400,
                 lineHeight: 1.7,
                 color: '#7A706C',
                 margin: 0,
-                maxWidth: 480,
+                maxWidth: 768,
               }}
             >
               AUREVA was not built in isolation. Every design decision
@@ -129,12 +129,12 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
               variants={fadeUpVariant}
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
+                fontSize: 17,
                 fontWeight: 600,
                 letterSpacing: '0.18em',
                 textTransform: 'uppercase',
                 color: '#8B1A4A',
-                marginBottom: 24,
+                marginBottom: 25,
               }}
             >
               Contributions
@@ -168,7 +168,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
                     style={{
                       display: 'flex',
                       alignItems: 'flex-start',
-                      gap: 20,
+                      gap: 21,
                       paddingBottom: i < 2 ? 32 : 0,
                     }}
                   >
@@ -197,7 +197,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
                         <span
                           style={{
                             fontFamily: "'Inter', sans-serif",
-                            fontSize: 13,
+                            fontSize: 17,
                             fontWeight: 700,
                             color: i === 0 ? '#FFFFFF' : '#8B1A4A',
                             letterSpacing: '0.05em',
@@ -214,22 +214,22 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
                             minHeight: 28,
                             background:
                               'linear-gradient(to bottom, rgba(139,26,74,0.3), rgba(139,26,74,0.08))',
-                            marginTop: 6,
+                            marginTop: 7,
                           }}
                         />
                       )}
                     </div>
 
                     {/* Right: text */}
-                    <div style={{ paddingTop: 6 }}>
+                    <div style={{ paddingTop: 7 }}>
                       <p
                         style={{
                           fontFamily: "'Playfair Display', serif",
-                          fontSize: 20,
+                          fontSize: 26,
                           fontWeight: 600,
                           color: '#1A1614',
                           margin: 0,
-                          marginBottom: 6,
+                          marginBottom: 7,
                           lineHeight: 1.2,
                         }}
                       >
@@ -238,12 +238,12 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
                       <p
                         style={{
                           fontFamily: "'Inter', sans-serif",
-                          fontSize: 16,
+                          fontSize: 21,
                           fontWeight: 400,
                           color: '#7A706C',
                           margin: 0,
                           lineHeight: 1.6,
-                          maxWidth: 360,
+                          maxWidth: 576,
                         }}
                       >
                         {step.sub}
@@ -264,12 +264,12 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
             transition={{ duration: 0.8, ease, delay: 0.3 }}
             style={{
               width: '100%',
-              height: 560,
+              height: 400,
               borderRadius: 24,
               overflow: 'hidden',
               boxShadow: '0 16px 48px rgba(26,22,20,0.12)',
               background: '#F2E6EC',
-              marginBottom: 24,
+              marginBottom: 25,
             }}
           >
             <img
@@ -294,7 +294,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
             style={{
               background: '#FFFFFF',
               borderRadius: 16,
-              padding: '24px 28px',
+              padding: '25px 29px',
               boxShadow: '0 8px 32px rgba(26,22,20,0.08)',
               border: '1px solid #E5E2DC',
               borderLeft: '4px solid #8B1A4A',
@@ -303,7 +303,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
+                fontSize: 17,
                 fontWeight: 600,
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
@@ -317,7 +317,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
             <p
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: 26,
+                fontSize: 34,
                 fontWeight: 700,
                 color: '#1A1614',
                 margin: 0,
@@ -327,7 +327,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
             >
               Dr. Mahmoud Abdelaleem
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
               {roles.map((role) => (
                 <div
                   key={role}
@@ -345,7 +345,7 @@ const Slide02ClinicalOrigin: React.FC<SlideProps> = () => {
                   <span
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: 400,
                       color: '#4A4340',
                       lineHeight: 1.5,

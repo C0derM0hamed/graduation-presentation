@@ -14,17 +14,17 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
-      <div style={{ marginBottom: 32 }}>
+      <div style={{ marginBottom: 38 }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease, delay: 0.05 }}
-          style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}
+          style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}
         >
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
           <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
+            fontSize: 21,
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -39,13 +39,13 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.12 }}
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 42,
+            fontSize: 67,
             fontWeight: 700,
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
             color: '#1A1614',
             margin: 0,
-            marginBottom: 10,
+            marginBottom: 12,
           }}
         >
           Grounded Clinical Generation
@@ -63,7 +63,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
         flex: 1,
         display: 'grid',
         gridTemplateColumns: '1.1fr 1fr',
-        gap: 56,
+        gap: 68,
         alignItems: 'center',
         minHeight: 0,
       }}>
@@ -72,7 +72,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0 }}>
 
           {/* Two inputs merge */}
-          <div style={{ display: 'flex', gap: 24, marginBottom: 0 }}>
+          <div style={{ display: 'flex', gap: 29, marginBottom: 0 }}>
             {[
               { label: 'Patient Context', sub: 'Clinical data · history · prediction' },
               { label: 'Retrieved Evidence', sub: 'ESHRE · NICE · ASRM guidelines' },
@@ -83,7 +83,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease, delay: 0.28 + i * 0.12 }}
                 style={{
-                  padding: '14px 18px',
+                  padding: '17px 22px',
                   background: '#FFFFFF',
                   border: '1px solid #E5E2DC',
                   borderRadius: 12,
@@ -94,17 +94,17 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
               >
                 <p style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 14,
+                  fontSize: 22,
                   fontWeight: 600,
                   color: '#1A1614',
                   margin: 0,
-                  marginBottom: 4,
+                  marginBottom: 5,
                 }}>
                   {inp.label}
                 </p>
                 <p style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 12,
+                  fontSize: 19,
                   color: '#7A706C',
                   margin: 0,
                   lineHeight: 1.5,
@@ -163,7 +163,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease, delay: 0.6 }}
             style={{
-              padding: '20px 40px',
+              padding: '24px 48px',
               background: '#1A1614',
               borderRadius: 16,
               textAlign: 'center',
@@ -185,18 +185,18 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
             }} />
             <p style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 24,
+              fontSize: 38,
               fontWeight: 700,
               color: '#FAFAF8',
               margin: 0,
-              marginBottom: 4,
+              marginBottom: 5,
               position: 'relative',
             }}>
               LLM
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 12,
+              fontSize: 19,
               color: 'rgba(250,250,248,0.5)',
               margin: 0,
               position: 'relative',
@@ -230,7 +230,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, ease, delay: 0.9 + i * 0.12 }}
                 style={{
-                  padding: '12px 20px',
+                  padding: '14px 24px',
                   background: step.highlight ? '#8B1A4A' : step.final ? '#F2E6EC' : '#F5F4F0',
                   border: step.highlight ? 'none' : step.final ? '1px solid rgba(139,26,74,0.2)' : '1px solid #E5E2DC',
                   borderRadius: 12,
@@ -241,17 +241,17 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
               >
                 <p style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 15,
+                  fontSize: 24,
                   fontWeight: 600,
                   color: step.highlight ? '#FFFFFF' : '#1A1614',
                   margin: 0,
-                  marginBottom: 3,
+                  marginBottom: 4,
                 }}>
                   {step.label}
                 </p>
                 <p style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: 12,
+                  fontSize: 19,
                   color: step.highlight ? 'rgba(255,255,255,0.6)' : '#7A706C',
                   margin: 0,
                 }}>
@@ -276,19 +276,19 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
         </div>
 
         {/* RIGHT — Principle cards */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 13,
+              fontSize: 21,
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
-              marginBottom: 4,
+              marginBottom: 5,
             }}
           >
             Design Principles
@@ -322,7 +322,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, ease, delay: card.delay }}
               style={{
-                padding: '18px 22px',
+                padding: '22px 26px',
                 background: '#FFFFFF',
                 border: '1px solid #E5E2DC',
                 borderRadius: 14,
@@ -331,17 +331,17 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
             >
               <p style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 15,
+                fontSize: 24,
                 fontWeight: 600,
                 color: '#1A1614',
                 margin: 0,
-                marginBottom: 6,
+                marginBottom: 8,
               }}>
                 {card.title}
               </p>
               <p style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 14,
+                fontSize: 22,
                 fontWeight: 400,
                 color: '#7A706C',
                 margin: 0,

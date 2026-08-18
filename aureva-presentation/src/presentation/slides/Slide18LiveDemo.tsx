@@ -21,21 +21,21 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
         justifyContent: 'center',
         height: '100%',
         textAlign: 'center',
-        padding: '0 40px',
+        padding: '0 64px',
       }}>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          style={{ width: '100%', maxWidth: 900 }}
+          style={{ width: '100%', maxWidth: 1440 }}
         >
           {/* Header */}
-          <motion.div variants={staggerItem} style={{ marginBottom: 20 }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+          <motion.div variants={staggerItem} style={{ marginBottom: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
               <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
               <span style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 14,
+                fontSize: 22,
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -51,13 +51,13 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
             variants={staggerItem}
             style={{
               fontFamily: "'Playfair Display', Georgia, serif",
-              fontSize: 56,
+              fontSize: 90,
               fontWeight: 700,
               letterSpacing: '-0.02em',
               lineHeight: 1.1,
               color: '#1A1614',
               margin: 0,
-              marginBottom: 40,
+              marginBottom: 64,
             }}
           >
             Live Demonstration
@@ -70,17 +70,17 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: 12,
-              marginBottom: 48,
+              gap: 19,
+              marginBottom: 77,
             }}
           >
-            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, fontWeight: 600, color: '#1A1614' }}>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 45, fontWeight: 600, color: '#1A1614' }}>
               Two Cases.
             </span>
-            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 20, color: '#7A706C' }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 32, color: '#7A706C' }}>
               Same Workflow.
             </span>
-            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 20, color: '#7A706C' }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 32, color: '#7A706C' }}>
               Different Clinical Picture.
             </span>
           </motion.div>
@@ -89,8 +89,8 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
           <div style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: 40,
-            marginBottom: 64,
+            gap: 64,
+            marginBottom: 102,
           }}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -101,25 +101,25 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
                 border: '1px solid #E5E2DC',
                 borderTop: '4px solid #2D6A4F',
                 borderRadius: 16,
-                padding: '32px',
+                padding: '51px',
                 boxShadow: '0 4px 20px rgba(26,22,20,0.06)',
               }}
             >
               <h3 style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 600,
                 letterSpacing: '0.1em',
                 textTransform: 'uppercase',
                 color: '#2D6A4F',
                 margin: 0,
-                marginBottom: 8,
+                marginBottom: 13,
               }}>
                 Case A
               </h3>
               <p style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: 24,
+                fontSize: 38,
                 fontWeight: 600,
                 color: '#1A1614',
                 margin: 0,
@@ -137,25 +137,25 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
                 border: '1px solid #E5E2DC',
                 borderTop: '4px solid #8B1A4A',
                 borderRadius: 16,
-                padding: '32px',
+                padding: '51px',
                 boxShadow: '0 4px 20px rgba(26,22,20,0.06)',
               }}
             >
               <h3 style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: 16,
+                fontSize: 26,
                 fontWeight: 600,
                 letterSpacing: '0.1em',
                 textTransform: 'uppercase',
                 color: '#8B1A4A',
                 margin: 0,
-                marginBottom: 8,
+                marginBottom: 13,
               }}>
                 Case B
               </h3>
               <p style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: 24,
+                fontSize: 38,
                 fontWeight: 600,
                 color: '#1A1614',
                 margin: 0,
@@ -171,7 +171,7 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, ease, delay: 1.5 }}
             style={{
-              padding: '16px 24px',
+              padding: '26px 38px',
               background: '#F5F4F0',
               borderRadius: 8,
               display: 'inline-block',
@@ -179,7 +179,7 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
           >
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 500,
               color: '#7A706C',
               margin: 0,

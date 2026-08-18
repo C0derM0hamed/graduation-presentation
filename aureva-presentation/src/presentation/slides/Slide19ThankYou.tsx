@@ -21,19 +21,19 @@ const Slide19ThankYou: React.FC<SlideProps> = () => {
         justifyContent: 'center',
         height: '100%',
         textAlign: 'center',
-        padding: '0 40px',
+        padding: '0 64px',
       }}>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          style={{ width: '100%', maxWidth: 800 }}
+          style={{ width: '100%', maxWidth: 1280 }}
         >
           {/* Header */}
-          <motion.div variants={staggerItem} style={{ marginBottom: 24 }}>
+          <motion.div variants={staggerItem} style={{ marginBottom: 38 }}>
             <span style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 18,
+              fontSize: 29,
               fontWeight: 700,
               letterSpacing: '0.3em',
               textTransform: 'uppercase',
@@ -47,13 +47,13 @@ const Slide19ThankYou: React.FC<SlideProps> = () => {
             variants={staggerItem}
             style={{
               fontFamily: "'Playfair Display', Georgia, serif",
-              fontSize: 80,
+              fontSize: 128,
               fontWeight: 700,
               letterSpacing: '-0.02em',
               lineHeight: 1.1,
               color: '#1A1614',
               margin: 0,
-              marginBottom: 32,
+              marginBottom: 51,
             }}
           >
             Thank You
@@ -74,11 +74,11 @@ const Slide19ThankYou: React.FC<SlideProps> = () => {
             variants={staggerItem}
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 22,
+              fontSize: 35,
               fontWeight: 400,
               color: '#7A706C',
               margin: 0,
-              marginBottom: 64,
+              marginBottom: 102,
             }}
           >
             We welcome your questions and guidance.
@@ -90,51 +90,51 @@ const Slide19ThankYou: React.FC<SlideProps> = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease, delay: 1.2 }}
             style={{
-              paddingTop: 48,
+              paddingTop: 77,
               borderTop: '1px solid #E5E2DC',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: 16,
+              gap: 26,
             }}
           >
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: 14,
+              fontSize: 22,
               fontWeight: 600,
               letterSpacing: '0.15em',
               textTransform: 'uppercase',
               color: '#8B1A4A',
               margin: 0,
-              marginBottom: 8,
+              marginBottom: 13,
             }}>
               With Special Appreciation To
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px 64px' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 600, color: '#1A1614' }}>
+                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 32, fontWeight: 600, color: '#1A1614' }}>
                   Dr. Mahmoud Abdelaleem
                 </span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#7A706C', marginTop: 4 }}>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 21, color: '#7A706C', marginTop: 6 }}>
                   Clinical Advisor
                 </span>
               </div>
               
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 600, color: '#1A1614' }}>
+                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 32, fontWeight: 600, color: '#1A1614' }}>
                   Eng. Josphine Boles
                 </span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#7A706C', marginTop: 4 }}>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 21, color: '#7A706C', marginTop: 6 }}>
                   Technical Supervisor
                 </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 600, color: '#1A1614' }}>
+                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 32, fontWeight: 600, color: '#1A1614' }}>
                   ITI Assiut Branch
                 </span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#7A706C', marginTop: 4 }}>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 21, color: '#7A706C', marginTop: 6 }}>
                   Committee
                 </span>
               </div>

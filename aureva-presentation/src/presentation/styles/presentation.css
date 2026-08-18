@@ -38,7 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #111;
+  background: radial-gradient(circle at center, #2a2522 0%, #111111 100%);
   overflow: hidden;
 }
 
@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: var(--slide-pad-y) var(--slide-pad-x);
-  background: var(--color-bg);
+  background: radial-gradient(circle at top left, var(--color-bg) 0%, var(--color-bg-alt) 100%);
   overflow: hidden;
 }
 
@@ -181,15 +181,23 @@ body {
 
 /* Card */
 .card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
   padding: var(--space-6);
+  transition: transform var(--duration-base) var(--ease-out-expo), box-shadow var(--duration-base) var(--ease-out-expo);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
 .card--accent-border {
-  border-left: 3px solid var(--color-accent);
+  border-left: 4px solid var(--color-accent);
 }
 
 /* Section tag */

@@ -11,7 +11,7 @@ import { staggerContainer, staggerItem } from '../assets/motionVariants';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const Slide18LiveDemo: React.FC<SlideProps> = () => {
+const Slide17LiveDemo: React.FC<SlideProps> = () => {
   return (
     <Slide>
       <div style={{
@@ -41,7 +41,7 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
                 textTransform: 'uppercase',
                 color: '#8B1A4A',
               }}>
-                18 · Application Demo
+                17 · Application Demo
               </span>
               <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
             </div>
@@ -194,4 +194,4 @@ const Slide18LiveDemo: React.FC<SlideProps> = () => {
   );
 };
 
-export default Slide18LiveDemo;
+export default Slide17LiveDemo;

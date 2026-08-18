@@ -22,15 +22,14 @@ import Slide07UsersCustomers      from '../slides/Slide07UsersCustomers';
 import Slide08BusinessModel       from '../slides/Slide08BusinessModel';
 import Slide09EgyptianMarket      from '../slides/Slide09EgyptianMarket';
 import Slide10UnderTheHood        from '../slides/Slide10UnderTheHood';
-import Slide11SystemArchitecture  from '../slides/Slide11SystemArchitecture';
+import Slide11TechStack         from '../slides/Slide11TechStack';
 import Slide12AiPrediction        from '../slides/Slide12AiPrediction';
 import Slide13PredictionExplanation from '../slides/Slide13PredictionExplanation';
 import Slide14ClinicalRag         from '../slides/Slide14ClinicalRag';
 import Slide15GroundedGeneration  from '../slides/Slide15GroundedGeneration';
-import Slide16InterfaceIntelligence from '../slides/Slide16InterfaceIntelligence';
-import Slide17BuiltToScale        from '../slides/Slide17BuiltToScale';
-import Slide18LiveDemo            from '../slides/Slide18LiveDemo';
-import Slide19ThankYou            from '../slides/Slide19ThankYou';
+import Slide16Security            from '../slides/Slide16Security';
+import Slide17LiveDemo            from '../slides/Slide17LiveDemo';
+import Slide18ThankYou            from '../slides/Slide18ThankYou';
 
 const slides: SlideConfig[] = [
   {
@@ -107,10 +106,10 @@ const slides: SlideConfig[] = [
   },
   {
     id: 11,
-    slug: 'system-architecture',
-    title: 'AUREVA System Architecture',
+    slug: 'tech-stack',
+    title: 'Technology Stack',
     section: 'technical',
-    component: Slide11SystemArchitecture,
+    component: Slide11TechStack,
   },
   {
     id: 12,
@@ -142,33 +141,26 @@ const slides: SlideConfig[] = [
   },
   {
     id: 16,
-    slug: 'interface-to-intelligence',
-    title: 'From Interface to Intelligence',
+    slug: 'platform-security',
+    title: 'Clinical-Grade Security',
     section: 'technical',
-    component: Slide16InterfaceIntelligence,
+    component: Slide16Security,
   },
   {
     id: 17,
-    slug: 'built-to-scale',
-    title: 'Built to Scale. Designed to Evolve',
-    section: 'technical',
-    component: Slide17BuiltToScale,
-  },
-  {
-    id: 18,
     slug: 'live-demo',
     title: 'Live Demonstration',
     section: 'closing',
     transition: 'hero-reveal',
-    component: Slide18LiveDemo,
+    component: Slide17LiveDemo,
   },
   {
-    id: 19,
+    id: 18,
     slug: 'thank-you',
     title: 'Thank You',
     section: 'closing',
     transition: 'hero-reveal',
-    component: Slide19ThankYou,
+    component: Slide18ThankYou,
   },
 ];
 

@@ -30,7 +30,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
             textTransform: 'uppercase',
             color: '#8B1A4A',
           }}>
-            15 · Clinical Generation
+            15 · AI Generation
           </span>
         </motion.div>
         <motion.h1

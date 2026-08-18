@@ -1,6 +1,6 @@
 /**
- * Slide 17 — BUILT TO SCALE. DESIGNED TO EVOLVE.
- * Three visual pillars: Security, Infrastructure, Open Source direction.
+ * Slide 17 — SECURITY & DATA PROTECTION
+ * Three visual pillars: Identity, API Security, Data Privacy.
  */
 
 import React from 'react';
@@ -12,38 +12,38 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const pillars = [
   {
-    title: 'Security & Access',
-    icon: '⌧',
+    title: 'Identity & Access',
+    icon: '⚿',
     items: [
-      { label: 'JWT Authentication', sub: 'Stateless secure sessions' },
-      { label: 'Role-Based Authorization', sub: 'Clinic & physician isolation' },
-      { label: 'Data Encryption', sub: 'In-transit and at-rest protection' },
+      { label: 'JWT Authentication', sub: 'Stateless access & refresh tokens' },
+      { label: 'Role Authorization', sub: 'Clinic & physician-scoped permissions' },
+      { label: 'Session Revocation', sub: 'Token blacklisting & active invalidation' },
     ],
     delay: 0.3,
   },
   {
-    title: 'Core Infrastructure',
-    icon: '⊞',
+    title: 'API Security',
+    icon: '⌗',
     items: [
-      { label: 'Docker Containerization', sub: 'Reproducible environments' },
-      { label: 'Background Processing', sub: 'Async ML & RAG tasks' },
-      { label: 'PostgreSQL', sub: 'ACID-compliant clinical storage' },
+      { label: 'Strict Validation', sub: 'Pydantic schemas & clinical range checks' },
+      { label: 'Attack Prevention', sub: 'Route-specific rate limiting & cooldowns' },
+      { label: 'Transport Security', sub: 'CORS, CSP, HSTS, and error masking' },
     ],
     delay: 0.45,
   },
   {
-    title: 'Open Architecture',
-    icon: '⎈',
+    title: 'Data Protection',
+    icon: '⛨',
     items: [
-      { label: 'Modular Design', sub: 'Decoupled intelligence layers' },
-      { label: 'Reusable Components', sub: 'Extensible UI and API' },
-      { label: 'Local AI Readiness', sub: 'Designed for on-premise execution' },
+      { label: 'Patient Encryption', sub: 'Fernet encryption at rest for sensitive data' },
+      { label: 'Secure Storage', sub: 'Bcrypt password hashing & isolated vaults' },
+      { label: 'Ownership Isolation', sub: 'Records strictly scoped to authenticated owners' },
     ],
     delay: 0.6,
   },
 ];
 
-const Slide17BuiltToScale: React.FC<SlideProps> = () => {
+const Slide16Security: React.FC<SlideProps> = () => {
   return (
     <Slide>
       {/* ── Header ── */}
@@ -63,7 +63,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
             textTransform: 'uppercase',
             color: '#8B1A4A',
           }}>
-            17 · Engineering Maturity
+            16 · Platform Security
           </span>
           <div style={{ width: 28, height: 2, background: '#8B1A4A', borderRadius: 999 }} />
         </motion.div>
@@ -83,7 +83,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
             marginBottom: 26,
           }}
         >
-          Built to Scale. Designed to Evolve.
+          Clinical-Grade Security & Privacy
         </motion.h1>
       </div>
 
@@ -147,7 +147,7 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
               </div>
               <h2 style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: 35,
+                fontSize: 32,
                 fontWeight: 700,
                 color: '#1A1614',
                 margin: 0,
@@ -206,4 +206,4 @@ const Slide17BuiltToScale: React.FC<SlideProps> = () => {
   );
 };
 
-export default Slide17BuiltToScale;
+export default Slide16Security;

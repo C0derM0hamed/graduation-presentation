@@ -115,7 +115,7 @@ const Slide10UnderTheHood: React.FC<SlideProps> = () => {
           transition={{ duration: 0.6, ease, delay: 0.8 }}
           style={{ display: 'flex', gap: 19, marginTop: 70, flexWrap: 'wrap' }}
         >
-          {['System Architecture', 'AI Prediction', 'Explainability', 'RAG Pipeline', 'Clinical Generation'].map((tag) => (
+          {['Technology Stack', 'AI Prediction', 'RAG Pipeline', 'Clinical-Grade Security'].map((tag) => (
             <span
               key={tag}
               style={{

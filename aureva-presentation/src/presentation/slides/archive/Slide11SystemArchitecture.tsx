@@ -159,6 +159,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
             <div style={{ display: 'flex', gap: 7 }}>
               <TechBadge label="React" delay={0.44} />
               <TechBadge label="TanStack" delay={0.48} />
+              <TechBadge label="TypeScript" delay={0.50} />
             </div>
           </div>
           <VArrow delay={0.52} />
@@ -172,6 +173,7 @@ const Slide11SystemArchitecture: React.FC<SlideProps> = () => {
             <Node label="Backend" sub="Business logic · Services" delay={0.72} accent />
             <div style={{ display: 'flex', gap: 7 }}>
               <TechBadge label="FastAPI" delay={0.78} />
+              <TechBadge label="Python" delay={0.80} />
               <TechBadge label="PostgreSQL" delay={0.82} />
             </div>
           </div>

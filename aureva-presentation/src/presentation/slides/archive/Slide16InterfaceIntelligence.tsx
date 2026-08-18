@@ -179,7 +179,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             <LayerBox
               label="Frontend Application"
               sub="Interactive clinical interface"
-              pills={['React', 'TanStack Query', 'TanStack Router']}
+              pills={['React 19', 'TanStack Start', 'TypeScript', 'Zustand']}
               pillsDelay={0.42}
               delay={0.32}
               wide
@@ -262,7 +262,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             <LayerBox
               label="FastAPI Backend"
               sub="REST endpoints · Business logic"
-              pills={['FastAPI', 'Python']}
+              pills={['FastAPI', 'Python 3.12', 'SQLAlchemy']}
               pillsDelay={0.46}
               accent
               delay={0.36}
@@ -281,7 +281,7 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             <LayerBox
               label="Data Store"
               sub="Persistent clinical data"
-              pills={['PostgreSQL']}
+              pills={['PostgreSQL 16']}
               pillsDelay={0.82}
               delay={0.76}
               wide
@@ -291,8 +291,8 @@ const Slide16InterfaceIntelligence: React.FC<SlideProps> = () => {
             {/* ML + RAG branches */}
             <div style={{ display: 'flex', gap: 17, width: '100%' }}>
               {[
-                { label: 'ML Engine', techs: ['XGBoost', 'SHAP'] },
-                { label: 'RAG Engine', techs: ['Qdrant', 'LLM'] },
+                { label: 'ML Engine', techs: ['XGBoost', 'SHAP', 'scikit-learn'] },
+                { label: 'RAG Engine', techs: ['Qdrant', 'Sentence Transformers'] },
               ].map((branch, i) => (
                 <motion.div
                   key={branch.label}

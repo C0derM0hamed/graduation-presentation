@@ -11,7 +11,7 @@ import { staggerContainer, staggerItem } from '../assets/motionVariants';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const Slide19ThankYou: React.FC<SlideProps> = () => {
+const Slide18ThankYou: React.FC<SlideProps> = () => {
   return (
     <Slide>
       <div style={{
@@ -147,4 +147,4 @@ const Slide19ThankYou: React.FC<SlideProps> = () => {
   );
 };
 
-export default Slide19ThankYou;
+export default Slide18ThankYou;

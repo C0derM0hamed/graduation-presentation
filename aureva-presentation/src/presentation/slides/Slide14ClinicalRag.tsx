@@ -73,14 +73,21 @@ const DocIcon: React.FC<{ label: string; delay: number }> = ({ label, delay }) =
   </motion.div>
 );
 
-const pipelineSteps = [
-  { label: 'PDF Extraction',    sub: 'Parse clinical documents',         icon: '⊡' },
-  { label: 'Knowledge Base',    sub: 'Indexed reference corpus',         icon: '⊟' },
-  { label: 'Semantic Chunks',   sub: 'Split into retrievable segments',   icon: '⊞' },
-  { label: 'Embeddings',        sub: 'Dense vector representations',      icon: '▣', accent: true },
-  { label: 'Qdrant',            sub: 'Vector database storage',           icon: '◈', dark: true },
-  { label: 'Retrieval',         sub: 'Semantic similarity search',        icon: '⊕' },
-  { label: 'Clinical Evidence', sub: 'Grounded reference passages',       icon: '◉', final: true },
+type PipelineStep = {
+  label: string;
+  sub: string;
+  icon: string;
+  accent?: boolean;
+  dark?: boolean;
+  final?: boolean;
+};
+
+const pipelineSteps: PipelineStep[] = [
+  { label: 'Medical Knowledge',  sub: 'Global IVF guidelines (ESHRE, ASRM)', icon: '⊡' },
+  { label: 'Case Analysis',      sub: 'Analyze patient-specific medical history', icon: '⊟' },
+  { label: 'Intelligent Search', sub: 'Scan protocols for matching criteria', icon: '⊞' },
+  { label: 'Guideline Matching', sub: 'Identify the optimal clinical pathways', icon: '▣', accent: true },
+  { label: 'Evidence Retrieval', sub: 'Extract proven, evidence-based passages', icon: '◉', final: true },
 ];
 
 const Slide14ClinicalRag: React.FC<SlideProps> = () => {

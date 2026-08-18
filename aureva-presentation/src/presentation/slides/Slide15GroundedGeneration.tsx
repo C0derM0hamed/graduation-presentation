@@ -185,14 +185,14 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
             }} />
             <p style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: 38,
+              fontSize: 34,
               fontWeight: 700,
               color: '#FAFAF8',
               margin: 0,
               marginBottom: 5,
               position: 'relative',
             }}>
-              LLM
+              Medical AI Engine
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -201,7 +201,7 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
               margin: 0,
               position: 'relative',
             }}>
-              Constrained generation · evidence-grounded
+              Personalized · Evidence-grounded
             </p>
           </motion.div>
 
@@ -297,12 +297,12 @@ const Slide15GroundedGeneration: React.FC<SlideProps> = () => {
           {[
             {
               title: 'Evidence First',
-              body: 'The LLM can only draw from retrieved clinical evidence — it does not generate protocol recommendations freely.',
+              body: 'The AI can only draw from retrieved clinical evidence — it does not generate protocol recommendations freely.',
               delay: 0.36,
             },
             {
               title: 'Controlled Generation',
-              body: 'Generation is structured and constrained. The LLM is one component inside a pipeline, not the decision-maker.',
+              body: 'Generation is structured and constrained. The AI is one component inside a pipeline, not the decision-maker.',
               delay: 0.5,
             },
             {
